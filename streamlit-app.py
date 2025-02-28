@@ -1,5 +1,4 @@
 import streamlit as st
-# from llama_parser import extract_data
 from ollama import Client
 import json
 client = Client(
