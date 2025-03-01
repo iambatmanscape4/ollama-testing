@@ -360,7 +360,7 @@ def get_bot_response(user_input):
 
         with st.spinner("Thinking..."):
             response = client.chat(
-                model=st.session_state.get('model', 'granite3.2:8b'),
+                model=st.session_state.get('model', 'granite3.2'),
                 messages=chat_history
             )
             content, function_call = extract_data(response['message']['content'])
@@ -443,7 +443,7 @@ with st.sidebar:
     # Model selection
     model = st.selectbox(
         "Select Model",
-        ["granite3.2:8b"],
+        ["granite3.2"],
         index=0
     )
     
