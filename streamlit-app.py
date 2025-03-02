@@ -2,7 +2,7 @@ import streamlit as st
 from ollama import Client
 import json
 client = Client(
-  host='https://ikg8sx2bhlliku-11434.proxy.runpod.net'
+  host='https://jz5hf1ica1zdsw-11434.proxy.runpod.net'
 )
 import random
 import json
